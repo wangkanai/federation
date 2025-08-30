@@ -55,6 +55,9 @@
       <Configuration Solution="Release|x86" Project="Release|Any CPU" />
     </Project>
     <File Path="Federation\Directory.Build.props" />
+    <File Path="Federation\README.md" />
+    <File Path="Federation\sign.ps1" />
+    <File Path="Federation\build.ps1" />
   </Folder>
   <Folder Name="/Federation/benchmark/" />
   <Folder Name="/Federation/tests/">
@@ -78,6 +81,10 @@
       <Configuration Solution="Release|x64" Project="Release|Any CPU" />
       <Configuration Solution="Release|x86" Project="Release|Any CPU" />
     </Project>
+    <File Path="Identity\build.ps1" />
+    <File Path="Identity\Directory.Build.props" />
+    <File Path="Identity\README.md" />
+    <File Path="Identity\sign.ps1" />
   </Folder>
   <Folder Name="/Identity/benchmark/" />
   <Folder Name="/Identity/tests/">
@@ -107,6 +114,10 @@
       <Configuration Solution="Release|x64" Project="Release|Any CPU" />
       <Configuration Solution="Release|x86" Project="Release|Any CPU" />
     </Project>
+    <File Path="Security\build.ps1" />
+    <File Path="Security\Directory.Build.props" />
+    <File Path="Security\README.md" />
+    <File Path="Security\sign.ps1" />
   </Folder>
   <Folder Name="/Security/benchmark/" />
   <Folder Name="/Security/tests/">
