@@ -8,9 +8,9 @@ param(
 )
 
 $dirs=[ordered]@{
-    1="Federation";
+    1="Security";
     2="Identity";
-    3="Security";
+    3="Federation";
 }
 
 $env:OneDriveConsumer+"\powershell-env.ps1" | out-null

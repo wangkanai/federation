@@ -54,6 +54,7 @@
       <Configuration Solution="Release|x64" Project="Release|Any CPU" />
       <Configuration Solution="Release|x86" Project="Release|Any CPU" />
     </Project>
+    <File Path="Federation\Directory.Build.props" />
   </Folder>
   <Folder Name="/Federation/benchmark/" />
   <Folder Name="/Federation/tests/">

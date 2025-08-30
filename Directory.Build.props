@@ -1,33 +1,38 @@
 <Project>
-	<PropertyGroup>
-		<Company>Wangkanai</Company>
-		<Authors>Sarin Na Wangkanai</Authors>
-		<Copyright>©2014-2025 Sarin Na Wangkanai, All rights reserved</Copyright>
+   <PropertyGroup>
+      <VersionPrefix>3.4.0</VersionPrefix>
+      <Title>Wangkanai Federation</Title>
+      <PackageTags>federation;;identity;security;aspnetcore</PackageTags>
+      <Description>Take control of Authentication and Authorization in ASP.NET Core with `Federation`, your partner for seamless OAuth 2.1 and OpenID Connect integrations. From managing JWTs and external authentication providers to a comprehensive identity model structure, `Federation` offers a robust, secure, and flexible solution. Discover `Federation` and let's redefine Authentication and Authorization together.</Description>
 
-		<RepositoryType>git</RepositoryType>
-		<RepositoryUrl>git://github.com/wangkanai/federation</RepositoryUrl>
+      <Company>Wangkanai</Company>
+      <Authors>Sarin Na Wangkanai</Authors>
+      <Copyright>©2014-2025 Sarin Na Wangkanai, All rights reserved</Copyright>
 
-		<PackageProjectUrl>https://github.com/wangkanai/federation</PackageProjectUrl>
-		<PackageLicense>https://github.com/wangkanai/federation/blob/main/LICENSE</PackageLicense>
-		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-	</PropertyGroup>
+      <RepositoryType>git</RepositoryType>
+      <RepositoryUrl>git://github.com/wangkanai/federation</RepositoryUrl>
 
-	<PropertyGroup>
-		<TargetFramework>net8.0</TargetFramework>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
-	</PropertyGroup>
+      <PackageProjectUrl>https://github.com/wangkanai/federation</PackageProjectUrl>
+      <PackageLicense>https://github.com/wangkanai/federation/blob/main/LICENSE</PackageLicense>
+      <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+   </PropertyGroup>
 
-	<PropertyGroup>
-		<SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
-		<PublishRepositoryUrl>true</PublishRepositoryUrl>
-		<EmbedUntrackedSources>true</EmbedUntrackedSources>
-		<IncludeSymbols>true</IncludeSymbols>
-		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
-	</PropertyGroup>
+   <PropertyGroup>
+      <TargetFramework>net8.0</TargetFramework>
+      <ImplicitUsings>enable</ImplicitUsings>
+      <Nullable>enable</Nullable>
+   </PropertyGroup>
 
-	<PropertyGroup>
-		<RepoRoot Condition=" '$(RepoRoot)' == '' OR !HasTrailingSlash('$(RepoRoot)') ">$(MSBuildThisFileDirectory)</RepoRoot>
-	</PropertyGroup>
+   <PropertyGroup>
+      <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
+      <PublishRepositoryUrl>true</PublishRepositoryUrl>
+      <EmbedUntrackedSources>true</EmbedUntrackedSources>
+      <IncludeSymbols>true</IncludeSymbols>
+      <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+      <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+   </PropertyGroup>
+
+   <PropertyGroup>
+      <RepoRoot Condition=" '$(RepoRoot)' == '' OR !HasTrailingSlash('$(RepoRoot)') ">$(MSBuildThisFileDirectory)</RepoRoot>
+   </PropertyGroup>
 </Project>
