@@ -4,7 +4,7 @@
       <FrameworkVersion>8.0.0</FrameworkVersion>
       <AspNetCoreVersion>8.0.0</AspNetCoreVersion>
       <ExtensionsVersion>8.0.0</ExtensionsVersion>
-      <EntityFrameworkVersion>8.0.0</EntityFrameworkVersion>
+      <EntityFrameworkVersion>8.0.6</EntityFrameworkVersion>
       <IdentityModelVersion>8.8.0</IdentityModelVersion>
    </PropertyGroup>
    <ItemGroup>
@@ -59,7 +59,8 @@
       <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.14.1"/>
       <PackageVersion Include="Microsoft.AspNetCore.TestHost" Version="8.0.18"/>
       <PackageVersion Include="Moq" Version="4.20.72"/>
-      <PackageVersion Include="xunit.v3" Version="2.0.3"/>
+      <PackageVersion Include="xunit" Version="2.9.2"/>
+      <PackageVersion Include="xunit.extensibility.core" Version="2.9.2"/>
       <PackageVersion Include="xunit.analyzers" Version="1.22.0" PrivateAssets="all"/>
       <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.1" PrivateAssets="all"/>
       <PackageVersion Include="coverlet.msbuild" Version="6.0.4" PrivateAssets="all"/>

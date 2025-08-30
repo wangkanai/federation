@@ -1,15 +1,15 @@
-{
-  "solution": {
-    "path": "Wangkanai.Federation.slnx",
-    "projects": [
-      "Federation/src/Domain/Wangkanai.Federation.Domain.csproj",
-      "Federation/src/Federation/Wangkanai.Federation.csproj",
-      "Federation/tests/Wangkanai.Federation.Tests.csproj",
-      "Identity/src/Wangkanai.Identity.csproj",
-      "Identity/tests/Wangkanai.Identity.Tests.csproj",
-      "Security/src/Core/Wangkanai.Security.Core.csproj",
-      "Security/src/Wangkanai.Security.csproj",
-      "Security/tests/Wangkanai.Security.Tests.csproj"
-    ]
-  }
-}
+<Solution>
+  <Project Path="Federation/src/Domain/Wangkanai.Federation.Domain.csproj" />
+  <Project Path="Federation/src/Federation/Wangkanai.Federation.csproj" />
+  <Project Path="Federation/src/AspNetIdentity/Wangkanai.Federation.AspNetIdentity.csproj" />
+  <Project Path="Federation/src/EntityFramework/Wangkanai.Federation.EntityFramework.csproj" />
+  <Project Path="Federation/src/AuthProxyBackend/Wangkanai.Federation.AuthProxyBackend.csproj" />
+  <Project Path="Federation/tests/Federation/Wangkanai.Federation.Tests.csproj" />
+  <Project Path="Federation/tests/Domain/Wangkanai.Federation.Domain.Tests.csproj" />
+  <Project Path="Identity/src/Wangkanai.Identity.csproj" />
+  <Project Path="Identity/tests/Wangkanai.Identity.Tests.csproj" />
+  <Project Path="Security/src/Core/Wangkanai.Security.Core.csproj" />
+  <Project Path="Security/src/Authentication/Wangkanai.Security.Authentication.csproj" />
+  <Project Path="Security/src/Authorization/Wangkanai.Security.Authorization.csproj" />
+  <Project Path="Security/tests/Security/Wangkanai.Security.Tests.csproj" />
+</Solution>
