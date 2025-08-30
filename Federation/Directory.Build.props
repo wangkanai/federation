@@ -6,7 +6,7 @@
 	</PropertyGroup>
 
 	<ItemGroup Condition="$(MSBuildProjectDirectory.Contains('src'))">
-		<None Include="$(RepoRoot)\Federation\README.md" Pack="true" PackagePath="\" />
+		<None Include="$(RepoRoot)\Federation\README.md" Pack="true" PackagePath="/" />
 	</ItemGroup>
 
 </Project>
