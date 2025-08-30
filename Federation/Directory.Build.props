@@ -1,0 +1,17 @@
+<Project>
+	<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory)..\, Directory.Build.props))\Directory.Build.props" />
+
+	<PropertyGroup>
+		<RootNamespace>Wangkanai.Federation</RootNamespace>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="$(MSBuildProjectDirectory.Contains('src'))">
+		<PackageIcon>federation-logo.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup Condition="$(MSBuildProjectDirectory.Contains('src'))">
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+</Project>

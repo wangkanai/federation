@@ -5,7 +5,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="$(RepoRoot)\Identity\src\Wangkanai.Identity.csproj" />
+        <ProjectReference Include="$(RepoRoot)\Identity\src\Identity\Wangkanai.Identity.csproj" />
     </ItemGroup>
 
 </Project>

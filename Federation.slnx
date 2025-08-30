@@ -1,0 +1,131 @@
+﻿<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/.claude/" />
+  <Folder Name="/.github/">
+    <File Path=".github\RELEASE.yml" />
+    <File Path=".github\FUNDING.yml" />
+    <File Path=".github\workflows\dotnet.yml" />
+  </Folder>
+  <Folder Name="/.solutions/">
+    <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="build.ps1" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="LICENSE" />
+    <File Path="md-styles.css" />
+    <File Path="README.md" />
+    <File Path="sign.ps1" />
+    <File Path="Directory.Build.targets" />
+  </Folder>
+  <Folder Name="/Federation/">
+    <Project Path="Federation\src\AspNetIdentity\Wangkanai.Federation.AspNetIdentity.csproj" Type="Classic C#">
+      <Configuration Solution="Debug|x64" Project="Debug|Any CPU" />
+      <Configuration Solution="Debug|x86" Project="Debug|Any CPU" />
+      <Configuration Solution="Release|x64" Project="Release|Any CPU" />
+      <Configuration Solution="Release|x86" Project="Release|Any CPU" />
+    </Project>
+    <Project Path="Federation\src\AuthProxyBackend\Wangkanai.Federation.AuthProxyBackend.csproj" Type="Classic C#">
+      <Configuration Solution="Debug|x64" Project="Debug|Any CPU" />
+      <Configuration Solution="Debug|x86" Project="Debug|Any CPU" />
+      <Configuration Solution="Release|x64" Project="Release|Any CPU" />
+      <Configuration Solution="Release|x86" Project="Release|Any CPU" />
+    </Project>
+    <Project Path="Federation\src\Domain\Wangkanai.Federation.Domain.csproj" Type="Classic C#">
+      <Configuration Solution="Debug|x64" Project="Debug|Any CPU" />
+      <Configuration Solution="Debug|x86" Project="Debug|Any CPU" />
+      <Configuration Solution="Release|x64" Project="Release|Any CPU" />
+      <Configuration Solution="Release|x86" Project="Release|Any CPU" />
+    </Project>
+    <Project Path="Federation\src\EntityFramework\Wangkanai.Federation.EntityFramework.csproj" Type="Classic C#">
+      <Configuration Solution="Debug|x64" Project="Debug|Any CPU" />
+      <Configuration Solution="Debug|x86" Project="Debug|Any CPU" />
+      <Configuration Solution="Release|x64" Project="Release|Any CPU" />
+      <Configuration Solution="Release|x86" Project="Release|Any CPU" />
+    </Project>
+    <Project Path="Federation\src\Federation\Wangkanai.Federation.csproj" Type="Classic C#">
+      <Configuration Solution="Debug|x64" Project="Debug|Any CPU" />
+      <Configuration Solution="Debug|x86" Project="Debug|Any CPU" />
+      <Configuration Solution="Release|x64" Project="Release|Any CPU" />
+      <Configuration Solution="Release|x86" Project="Release|Any CPU" />
+    </Project>
+    <File Path="Federation\Directory.Build.props" />
+    <File Path="Federation\README.md" />
+    <File Path="Federation\sign.ps1" />
+    <File Path="Federation\build.ps1" />
+  </Folder>
+  <Folder Name="/Federation/benchmark/" />
+  <Folder Name="/Federation/tests/">
+    <Project Path="Federation\tests\Domain\Wangkanai.Federation.Domain.Tests.csproj" Type="Classic C#">
+      <Configuration Solution="Debug|x64" Project="Debug|Any CPU" />
+      <Configuration Solution="Debug|x86" Project="Debug|Any CPU" />
+      <Configuration Solution="Release|x64" Project="Release|Any CPU" />
+      <Configuration Solution="Release|x86" Project="Release|Any CPU" />
+    </Project>
+    <Project Path="Federation\tests\Federation\Wangkanai.Federation.Tests.csproj" Type="Classic C#">
+      <Configuration Solution="Debug|x64" Project="Debug|Any CPU" />
+      <Configuration Solution="Debug|x86" Project="Debug|Any CPU" />
+      <Configuration Solution="Release|x64" Project="Release|Any CPU" />
+      <Configuration Solution="Release|x86" Project="Release|Any CPU" />
+    </Project>
+  </Folder>
+  <Folder Name="/Identity/">
+    <Project Path="Identity\src\Identity\Wangkanai.Identity.csproj" Type="Classic C#">
+      <Configuration Solution="Debug|x64" Project="Debug|Any CPU" />
+      <Configuration Solution="Debug|x86" Project="Debug|Any CPU" />
+      <Configuration Solution="Release|x64" Project="Release|Any CPU" />
+      <Configuration Solution="Release|x86" Project="Release|Any CPU" />
+    </Project>
+    <File Path="Identity\build.ps1" />
+    <File Path="Identity\Directory.Build.props" />
+    <File Path="Identity\README.md" />
+    <File Path="Identity\sign.ps1" />
+  </Folder>
+  <Folder Name="/Identity/benchmark/" />
+  <Folder Name="/Identity/tests/">
+    <Project Path="Identity\tests\Wangkanai.Identity.Tests.csproj" Type="Classic C#">
+      <Configuration Solution="Debug|x64" Project="Debug|Any CPU" />
+      <Configuration Solution="Debug|x86" Project="Debug|Any CPU" />
+      <Configuration Solution="Release|x64" Project="Release|Any CPU" />
+      <Configuration Solution="Release|x86" Project="Release|Any CPU" />
+    </Project>
+  </Folder>
+  <Folder Name="/Security/">
+    <Project Path="Security\src\Authentication\Wangkanai.Security.Authentication.csproj" Type="Classic C#">
+      <Configuration Solution="Debug|x64" Project="Debug|Any CPU" />
+      <Configuration Solution="Debug|x86" Project="Debug|Any CPU" />
+      <Configuration Solution="Release|x64" Project="Release|Any CPU" />
+      <Configuration Solution="Release|x86" Project="Release|Any CPU" />
+    </Project>
+    <Project Path="Security\src\Authorization\Wangkanai.Security.Authorization.csproj" Type="Classic C#">
+      <Configuration Solution="Debug|x64" Project="Debug|Any CPU" />
+      <Configuration Solution="Debug|x86" Project="Debug|Any CPU" />
+      <Configuration Solution="Release|x64" Project="Release|Any CPU" />
+      <Configuration Solution="Release|x86" Project="Release|Any CPU" />
+    </Project>
+    <Project Path="Security\src\Core\Wangkanai.Security.Core.csproj" Type="Classic C#">
+      <Configuration Solution="Debug|x64" Project="Debug|Any CPU" />
+      <Configuration Solution="Debug|x86" Project="Debug|Any CPU" />
+      <Configuration Solution="Release|x64" Project="Release|Any CPU" />
+      <Configuration Solution="Release|x86" Project="Release|Any CPU" />
+    </Project>
+    <File Path="Security\build.ps1" />
+    <File Path="Security\Directory.Build.props" />
+    <File Path="Security\README.md" />
+    <File Path="Security\sign.ps1" />
+  </Folder>
+  <Folder Name="/Security/benchmark/" />
+  <Folder Name="/Security/tests/">
+    <Project Path="Security\tests\Security\Wangkanai.Security.Tests.csproj" Type="Classic C#">
+      <Configuration Solution="Debug|x64" Project="Debug|Any CPU" />
+      <Configuration Solution="Debug|x86" Project="Debug|Any CPU" />
+      <Configuration Solution="Release|x64" Project="Release|Any CPU" />
+      <Configuration Solution="Release|x86" Project="Release|Any CPU" />
+    </Project>
+  </Folder>
+</Solution>
