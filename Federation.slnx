@@ -4,6 +4,24 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Folder Name="/.claude/" />
+  <Folder Name="/.github/">
+    <File Path=".github\RELEASE.yml" />
+    <File Path=".github\FUNDING.yml" />
+    <File Path=".github\workflows\dotnet.yml" />
+  </Folder>
+  <Folder Name="/.solutions/">
+    <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="build.ps1" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="LICENSE" />
+    <File Path="md-styles.css" />
+    <File Path="README.md" />
+    <File Path="sign.ps1" />
+  </Folder>
   <Folder Name="/Federation/" />
   <Folder Name="/Federation/src/" />
   <Folder Name="/Federation/src/Domain/">
