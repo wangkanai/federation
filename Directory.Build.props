@@ -35,4 +35,8 @@
    <PropertyGroup>
       <RepoRoot Condition=" '$(RepoRoot)' == '' OR !HasTrailingSlash('$(RepoRoot)') ">$(MSBuildThisFileDirectory)</RepoRoot>
    </PropertyGroup>
+
+   <ItemGroup Condition="$(MSBuildProjectDirectory.Contains('src'))">
+      <None Include="$(RepoRoot)\assets\federation-logo.png" Pack="true" PackagePath="\" />
+   </ItemGroup>
 </Project>

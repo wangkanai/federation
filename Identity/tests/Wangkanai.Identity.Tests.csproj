@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <ItemGroup>
-        <ProjectReference Include="..\src\Wangkanai.Identity.csproj" />
+        <ProjectReference Include="..\src\Identity\Wangkanai.Identity.csproj" />
     </ItemGroup>
 
 </Project>
