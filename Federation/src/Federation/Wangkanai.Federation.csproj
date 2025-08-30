@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<IsTrimmable>true</IsTrimmable>
+		<Optimize>true</Optimize>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" />
+		<PackageReference Include="Microsoft.IdentityModel.Tokens" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Wangkanai.Cryptography" />
+		<PackageReference Include="Wangkanai.System" />
+		<PackageReference Include="Wangkanai.Webserver" />
+		<ProjectReference Include="..\Domain\Wangkanai.Federation.Domain.csproj" />
+	</ItemGroup>
+
+</Project>
