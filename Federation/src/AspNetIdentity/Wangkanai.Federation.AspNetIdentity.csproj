@@ -4,7 +4,7 @@
       <PackageReference Include="Wangkanai.Webserver"/>
    </ItemGroup>
    <ItemGroup>
-      <ProjectReference Include="..\..\..\Identity\src\Wangkanai.Identity.csproj"/>
+      <ProjectReference Include="$(RepoRoot)\Identity\src\Identity\Wangkanai.Identity.csproj"/>
       <ProjectReference Include="..\Federation\Wangkanai.Federation.csproj"/>
    </ItemGroup>
 

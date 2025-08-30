@@ -57,7 +57,6 @@
       <PackageVersion Include="Wangkanai.Cryptography" Version="1.5.0"/>
       <PackageVersion Include="Wangkanai.Domain" Version="4.6.0"/>
       <PackageVersion Include="Wangkanai.System" Version="5.8.0"/>
-      <PackageVersion Include="Wangkanai.Testing" Version="1.0.0"/>
       <PackageVersion Include="Wangkanai.Webserver" Version="4.5.0"/>
    </ItemGroup>
 </Project>
