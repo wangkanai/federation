@@ -12,7 +12,7 @@ env:
   DOTNET_VERSION: '9.0.x'
 
 jobs:
-  build-and-test:
+  build-dotnet:
     runs-on: ubuntu-latest
 
     steps:
@@ -91,32 +91,3 @@ jobs:
       with:
         files: ./TestResults/*/coverage.opencover.xml
         fail_ci_if_error: false
-
-  package:
-    needs: build-and-test
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: ${{ env.DOTNET_VERSION }}
-
-    - name: Restore dependencies
-      run: dotnet restore Federation.slnx
-
-    - name: Build
-      run: dotnet build Federation.slnx --configuration Release --no-restore
-
-    - name: Pack
-      run: dotnet pack Federation.slnx --configuration Release --no-build --output ./artifacts
-
-    - name: Upload artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: nuget-packages
-        path: ./artifacts/*.nupkg
