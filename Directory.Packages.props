@@ -10,12 +10,7 @@
    <ItemGroup>
       <!--sourcelink-->
       <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All"/>
-      <!--wangkanai packages-->
-      <PackageVersion Include="Wangkanai.Cryptography" Version="1.5.0"/>
-      <PackageVersion Include="Wangkanai.Domain" Version="4.6.0"/>
-      <PackageVersion Include="Wangkanai.System" Version="5.8.0"/>
-      <PackageVersion Include="Wangkanai.Testing" Version="1.0.0"/>
-      <PackageVersion Include="Wangkanai.Webserver" Version="4.5.0"/>
+
       <!--system-->
       <PackageVersion Include="System.ComponentModel.Annotations" Version="5.0.0"/>
       <!--framework-->
@@ -72,5 +67,11 @@
       <PackageVersion Include="JetBrains.Annotations" Version="2024.3.0"/>
       <PackageVersion Include="HtmlAgilityPack" Version="1.12.1"/>
       <PackageVersion Include="Newtonsoft.Json" Version="13.0.3"/>
+      <!--wangkanai-->
+      <PackageVersion Include="Wangkanai.Cryptography" Version="1.5.0"/>
+      <PackageVersion Include="Wangkanai.Domain" Version="4.6.0"/>
+      <PackageVersion Include="Wangkanai.System" Version="5.8.0"/>
+      <PackageVersion Include="Wangkanai.Testing" Version="1.0.0"/>
+      <PackageVersion Include="Wangkanai.Webserver" Version="4.5.0"/>
    </ItemGroup>
 </Project>

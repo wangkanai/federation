@@ -8,8 +8,4 @@
         <PackageReference Include="Wangkanai.Domain" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Identity\" />
-    </ItemGroup>
-
 </Project>
