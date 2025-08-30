@@ -1,10 +1,10 @@
 <Project>
    <PropertyGroup>
       <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-      <FrameworkVersion>8.0.0</FrameworkVersion>
-      <AspNetCoreVersion>8.0.0</AspNetCoreVersion>
-      <ExtensionsVersion>8.0.0</ExtensionsVersion>
-      <EntityFrameworkVersion>8.0.6</EntityFrameworkVersion>
+      <FrameworkVersion>9.0.0</FrameworkVersion>
+      <AspNetCoreVersion>9.0.0</AspNetCoreVersion>
+      <ExtensionsVersion>9.0.0</ExtensionsVersion>
+      <EntityFrameworkVersion>9.0.0</EntityFrameworkVersion>
       <IdentityModelVersion>8.8.0</IdentityModelVersion>
    </PropertyGroup>
    <ItemGroup>

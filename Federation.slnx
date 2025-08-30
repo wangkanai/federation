@@ -21,6 +21,7 @@
     <File Path="md-styles.css" />
     <File Path="README.md" />
     <File Path="sign.ps1" />
+    <File Path="Directory.Build.targets" />
   </Folder>
   <Folder Name="/Federation/">
     <Project Path="Federation\src\AspNetIdentity\Wangkanai.Federation.AspNetIdentity.csproj" Type="Classic C#">
