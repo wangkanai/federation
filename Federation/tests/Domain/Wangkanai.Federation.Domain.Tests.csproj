@@ -1,6 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<ItemGroup>
+		<PackageReference Include="xunit" />
+		<PackageReference Include="xunit.runner.visualstudio" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" />
 		<ProjectReference Include="..\..\src\Domain\Wangkanai.Federation.Domain.csproj" />
 	</ItemGroup>
 

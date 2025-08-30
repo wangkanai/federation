@@ -5,7 +5,6 @@ using Microsoft.Extensions.Logging;
 using Wangkanai.Federation.Models;
 using Wangkanai.Federation.Services;
 using Wangkanai.Identity;
-using Wangkanai.Internal;
 
 namespace Wangkanai.Federation.Responses;
 
@@ -27,9 +26,9 @@ public class DiscoveryResponseFactory : IDiscoveryResponseFactory
 
 	public virtual async Task<Dictionary<string, object>> CreateResultAsync(string baseUri, string issuerUri)
 	{
-		using var activity = Tracing.BasicActivitySource.StartActivity();
+		// TODO: Add activity tracing when available
 
-		baseUri = baseUri.EnsureTrailingSlash();
+		baseUri = baseUri.EndsWith("/") ? baseUri : baseUri + "/";
 
 		var entries = new Dictionary<string, object>
 		{
@@ -43,7 +42,7 @@ public class DiscoveryResponseFactory : IDiscoveryResponseFactory
 
 	public virtual async Task<IEnumerable<JsonWebKey>> CreateJwkAsync()
 	{
-		using var activity = Tracing.BasicActivitySource.StartActivity();
+		// TODO: Add activity tracing when available
 
 		var webKeys = new List<JsonWebKey>();
 

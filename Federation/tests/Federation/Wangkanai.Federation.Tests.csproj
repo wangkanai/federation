@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <ItemGroup>
-        <ProjectReference Include="..\..\..\Testing\src\Wangkanai.Testing.csproj" />
+        <PackageReference Include="Wangkanai.Testing" />
         <ProjectReference Include="..\..\src\Federation\Wangkanai.Federation.csproj" />
     </ItemGroup>
 

@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <ItemGroup>
-        <ProjectReference Include="$(RepoRoot)\Identity\src\Wangkanai.Identity.csproj" />
-        <ProjectReference Include="$(RepoRoot)\Webserver\src\Wangkanai.Webserver.csproj" />
+        <ProjectReference Include="..\..\..\Identity\src\Wangkanai.Identity.csproj" />
+        <PackageReference Include="Wangkanai.Webserver" />
         <ProjectReference Include="..\Federation\Wangkanai.Federation.csproj" />
     </ItemGroup>
 
