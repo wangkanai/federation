@@ -53,7 +53,7 @@ jobs:
         dotnet tool install --global dotnet-sonarscanner
     
     - name: Restore dependencies
-      run: dotnet restore Wangkanai.Federation.slnx
+      run: dotnet restore Wangkanai.Federation.sln
     
     - name: SonarCloud Begin Analysis
       env:
@@ -70,11 +70,11 @@ jobs:
           /d:sonar.coverage.exclusions="**/tests/**,**/benchmarks/**"
     
     - name: Build
-      run: dotnet build Wangkanai.Federation.slnx --configuration Release --no-restore
+      run: dotnet build Wangkanai.Federation.sln --configuration Release --no-restore
     
     - name: Test
       run: |
-        dotnet test Wangkanai.Federation.slnx --configuration Release --no-build --verbosity normal \
+        dotnet test Wangkanai.Federation.sln --configuration Release --no-build --verbosity normal \
           --collect:"XPlat Code Coverage" \
           --results-directory ./TestResults/ \
           -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=opencover
@@ -107,13 +107,13 @@ jobs:
         dotnet-version: ${{ env.DOTNET_VERSION }}
     
     - name: Restore dependencies
-      run: dotnet restore Wangkanai.Federation.slnx
+      run: dotnet restore Wangkanai.Federation.sln
     
     - name: Build
-      run: dotnet build Wangkanai.Federation.slnx --configuration Release --no-restore
+      run: dotnet build Wangkanai.Federation.sln --configuration Release --no-restore
     
     - name: Pack
-      run: dotnet pack Wangkanai.Federation.slnx --configuration Release --no-build --output ./artifacts
+      run: dotnet pack Wangkanai.Federation.sln --configuration Release --no-build --output ./artifacts
     
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
