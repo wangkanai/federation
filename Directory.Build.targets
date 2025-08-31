@@ -3,15 +3,18 @@
    <ItemGroup>
       <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="all"/>
    </ItemGroup>
+
    <PropertyGroup Condition="$(MSBuildProjectName.Contains('Benchmark'))">
       <OutputType>Exe</OutputType>
       <Optimize>true</Optimize>
       <IsPackable>false</IsPackable>
       <SonarQubeExclude>true</SonarQubeExclude>
    </PropertyGroup>
+
    <ItemGroup Condition="$(MSBuildProjectName.Contains('Benchmark'))">
       <PackageReference Include="BenchmarkDotNet"/>
    </ItemGroup>
+
    <PropertyGroup Condition="$(MSBuildProjectName.Contains('Tests'))">
       <OutputType>Exe</OutputType>
       <IsPackable>false</IsPackable>
@@ -28,12 +31,15 @@
       <ExcludeByAttribute>GeneratedCodeAttribute,CompilerGeneratedAttribute</ExcludeByAttribute>
       <IncludeTestAssembly>false</IncludeTestAssembly>
    </PropertyGroup>
+
    <ItemGroup Condition="$(MSBuildProjectName.Contains('Tests'))">
       <Using Include="Xunit"/>
    </ItemGroup>
+
    <ItemGroup Condition="$(MSBuildProjectName.Contains('Tests'))">
-      <Content Include="$(RepoRoot)testconfig.json" Link="testconfig.json" CopyToOutputDirectory="PreserveNewest" Condition="Exists('$(RepoRoot)testconfig.json')"/>
+      <Content Include="xunit.runner.json" CopyToOutputDirectory="PreserveNewest" />
    </ItemGroup>
+
    <!-- xUnit Tests-->
    <ItemGroup Condition="$(MSBuildProjectName.Contains('Tests'))">
       <PackageReference Include="Microsoft.TestPlatform.TestHost"/>
